@@ -9,8 +9,8 @@ export default function SignIn() {
       <Container>
         <Illustration source={IllustrationImg} resizeMode="stretch"/>
         <Content>
-          <Title>Organize {`\n`}suas jogatinas {`\n`} facilmente</Title>
-          <SubTitle> Crie grupos para seus games {`\n`}favoritos com seus amigos</SubTitle>
+          <Title>Conecte-se {'\n'}e organize {'\n'} suas jogatinas</Title>
+          <SubTitle> Crie grupos para seus games {'\n'}favoritos com seus amigos</SubTitle>
           <ButtonIcon title="Entrar com Discord" activeOpacity={.7}/>
         </Content>
       </Container>
