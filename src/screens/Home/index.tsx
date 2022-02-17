@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { FlatList } from "react-native";
+import Appointment from "../../components/Appointment";
 import ButtonAdd from "../../components/ButtonAdd";
 import CategorySelect from "../../components/CategorySelect";
 import ListHeader from "../../components/ListHeader";
 import Profile from "../../components/Profile";
 import "./styles";
-import { Container, Content, Header, List, ViewList } from "./styles";
+import { Container, Content, Header, TextGuild, ViewList } from "./styles";
 
 export default function Home() {
   const [category, setCategory] = useState("");
@@ -44,11 +45,13 @@ export default function Home() {
         />
         <Content>
           <ListHeader title="Partidas agendadas" subtitle="Total 6" />
-{/*          <List
+          <FlatList
           data={appointments}
           keyExtractor={item => item.id}
-          renderItem={({item}=>)}
-          /> */}
+          renderItem={({item})=>(
+            <Appointment data={item}/>
+          )}
+          />
         </Content>
       </ViewList>
     </Container>

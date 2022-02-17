@@ -21,3 +21,6 @@ export const Content = styled.View`
   margin-top: 42px;
 
 `;
+export const TextGuild = styled.Text`
+  
+`;
