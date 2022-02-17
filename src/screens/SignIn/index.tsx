@@ -3,6 +3,8 @@ import { Container, Content, Illustration, SubTitle, Title } from "./styles";
 import IllustrationImg from '../../assets/illustration.png'
 import ButtonIcon from "../../components/ButtonIcon";
 import { useNavigation } from "@react-navigation/native";
+import Background from "../../components/Background";
+
 
 export default function SignIn() {
   const navigation = useNavigation();
@@ -12,7 +14,7 @@ export default function SignIn() {
   }
 
   return (
-    <>
+    <Background>
       <Container>
         <Illustration source={IllustrationImg} resizeMode="stretch"/>
         <Content>
@@ -21,6 +23,6 @@ export default function SignIn() {
           <ButtonIcon title="Entrar com Discord" activeOpacity={.7} onPress={handleSignIn}/>
         </Content>
       </Container>
-    </>
+      </Background>
   );
 }

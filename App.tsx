@@ -7,6 +7,7 @@ import {
 import AppLoading from "expo-app-loading";
 import { StatusBar } from "expo-status-bar";
 import Routes from "./src/routes";
+import Background from "./src/components/Background";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -17,13 +18,13 @@ export default function App() {
   });
   if (!fontsLoaded) {
     //Se as fonts não carregarem, mantem a tela de splash
-    <AppLoading />;
+    return <AppLoading />;
   }
 
   return (
-    <>
+    <Background>
       <StatusBar style="light" />
       <Routes />
-    </>
+    </Background>
   );
 }
