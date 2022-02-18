@@ -26,3 +26,11 @@ export const SubTitle = styled.Text`
   font-family: ${theme.fonts.text400};
   color: ${theme.colors.heading};
 `;
+
+export const Footer =styled.View`
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+`;

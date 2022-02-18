@@ -39,4 +39,5 @@ export const Title = styled.Text`
   font-family: ${theme.fonts.title700};
   color: ${theme.colors.heading};
   font-size: 15px;
+  margin-top: 15px;
 `;

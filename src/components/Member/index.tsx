@@ -1,5 +1,13 @@
 import Avatar from "../Avatar";
-import { BulletView, Container, Content, StatusText, StatusView, Title } from "./styles";
+import {
+  BulletOff,
+  BulletOn,
+  Container,
+  Content,
+  StatusText,
+  StatusView,
+  Title,
+} from "./styles";
 
 export type MemberProps = {
   id: string;
@@ -21,7 +29,7 @@ export default function Member({ data }: Props) {
       <Content>
         <Title>{data.username}</Title>
         <StatusView>
-          <BulletView></BulletView>
+          {isOnline ? <BulletOn /> : <BulletOff />}
           <StatusText>{isOnline ? "Disponível" : "Ocupado"}</StatusText>
         </StatusView>
       </Content>
