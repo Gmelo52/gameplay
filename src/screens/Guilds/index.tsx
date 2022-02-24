@@ -16,11 +16,13 @@ export default function Guilds() {
   return (
     <Container>
       <FlatList
+      style={{width:'100%',}}
       data={guilds}
       keyExtractor={item => item.id}
       renderItem={({item})=>(
         <Guild data={item}/>
       )}
+      showsVerticalScrollIndicator={false}
       ItemSeparatorComponent={()=><ListDivider/>}
       />
     </Container>
